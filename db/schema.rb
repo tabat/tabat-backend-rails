@@ -15,13 +15,13 @@ ActiveRecord::Schema.define(version: 20150707150416) do
 
   create_table "users", force: :cascade do |t|
     t.string   "login",                  limit: 120,              null: false
+    t.string   "email",                  limit: 255, default: "", null: false
+    t.string   "encrypted_password",     limit: 255, default: "", null: false
     t.integer  "status",                 limit: 4,   default: 0
     t.string   "activation_code",        limit: 80,               null: false
     t.string   "name",                   limit: 120,              null: false
     t.string   "location",               limit: 120
     t.string   "introduction",           limit: 255
-    t.string   "email",                  limit: 255, default: "", null: false
-    t.string   "encrypted_password",     limit: 255, default: "", null: false
     t.string   "reset_password_token",   limit: 255
     t.datetime "reset_password_sent_at"
     t.datetime "created_at",                                      null: false
