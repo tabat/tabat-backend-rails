@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
   namespace :api do
+  namespace :v1 do
+    get 'sessions/create'
+    end
+  end
+
+  namespace :api do
     namespace :v1 do
       resources :users do
         member do
           get 'profile', to: "users#profile"
         end
       end
+      resources :sessions, only: [:create]
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.

@@ -2,28 +2,42 @@ source 'http://ruby.taobao.org'
 
 # pagination
 gem 'kaminari'
+
 # authority management
 gem 'pundit'
+
 # status machine
 gem 'aasm'
+
 # respond_with
 gem 'responders'
+
 # regular jobs
 gem 'whenever'
+
 #redis client
 gem 'redis-objects'
+
 # background jobs
 gem 'sidekiq'
+
 # deployment
 gem 'capistrano'
+
 # database
 gem 'mysql2'
+
 # the third-part authorization
 gem 'omniauth'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
+
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'
 
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
@@ -42,9 +56,6 @@ gem 'rails', '4.2.3'
 # gem 'turbolinks'
 # bundle exec rake doc:rails generates the API under doc/api.
 # gem 'sdoc', '~> 0.4.0', group: :doc
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
