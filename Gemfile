@@ -75,6 +75,12 @@ group :development, :test do
 
   # Load local environment
   gem 'dotenv-rails'
+
+  #debug with pry
+  gem 'byebug'
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'pry-byebug'
 end
 
 group :test do

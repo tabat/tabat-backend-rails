@@ -5,14 +5,14 @@ class Api::V1::UsersController <  Api::V1::BaseController
   end
 
   def create
-    User.create secure_params
+    @user = User.create secure_params
   end
 
 
   private
 
   def secure_params
-      params.require(:user).permit(:email, :password, :password_confirmation, :name, :location, :introduction)
+    params.require(:user).permit(:email, :login, :password, :password_confirmation, :name, :location, :introduction)
   end
 
 end
